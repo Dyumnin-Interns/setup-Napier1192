@@ -1,17 +1,17 @@
-module or_test(
+module xor_test(
     input wire a,
     input wire b,
     output wire y
 );
 
-or_gate or_gate(
+xor_gate xor_gate(
     .a(a),
     .b(b),
     .y(y)
 );
 
 initial begin
-    $dumpfile("waves.vcd");
+    $dumpfile("xor.vcd");
     $dumpvars;
 end
 
